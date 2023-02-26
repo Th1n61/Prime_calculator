@@ -10,23 +10,18 @@ number+=1
 print('...')
 timea=time.perf_counter()
 while True:
-  
   for i in range(1,ceil((count+1)/2)):
-    if numberOfMultipliers==2:
+    if numberOfMultipliers==2: 
       break
-    if count%i==0:
+    if count%i==0: 
       numberOfMultipliers+=1
-      
-  if numberOfMultipliers<2:
+  if numberOfMultipliers<2: 
     list.append(count)  
-  else:
-    pass
-
-    
+  else: 
+    pass  
   numberOfMultipliers=0
   count += 1
-  if len(list)==number:
-    break
-print(list[number-1])
+  if len(list)==number: break
 timeb=time.perf_counter()
-print('it took about',round(timeb-timea),'seconds.')
+print(list[number-1])
+print('it took about',timeb-timea,'seconds.')
